@@ -1,0 +1,18 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>First WebSite</title>
+	<link rel="stylesheet" href="{% static 'my_app/style.css' %}">
+</head>
+<body>
+	{% if is_new_year %}
+	<h1>да</h1>
+	{% else %}
+	<h1>нет</h1>
+	{% endif %}
+</body>
+</html>
